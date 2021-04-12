@@ -9,8 +9,6 @@ import {
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
-import back from "../assets/back-arrow.svg";
-
 import ArrowSwitch from "./ArrowSwitch";
 import Search from "./Search";
 import AccentButton from "./utils/AccentButton";

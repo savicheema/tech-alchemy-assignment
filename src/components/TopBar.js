@@ -14,24 +14,27 @@ import ArrowSwitch from "./ArrowSwitch";
 import Search from "./Search";
 import AccentButton from "./utils/AccentButton";
 
-const TopBar = ({ turnOnFilter }) => (
+const TopBar = ({ turnOnFilter, isRestaurant }) => (
   <div className="top-bar">
     <div className="back">
       <AccentButton>
         <img src={back} alt="back" />
       </AccentButton>
     </div>
-    <div className="all-functions">
-      <div className="shop">
-        <FontAwesomeIcon icon={faStore} />
-        <span> Da Otto </span>
-        <ArrowSwitch type="small" />
+    {!isRestaurant && (
+      <div className="all-functions">
+        <div className="shop">
+          <FontAwesomeIcon icon={faStore} />
+          <span> Da Otto </span>
+          <ArrowSwitch type="small" />
+        </div>
+        <Search />
+        <AccentButton action={turnOnFilter}>
+          <FontAwesomeIcon icon={faFilter} />
+        </AccentButton>
       </div>
-      <Search />
-      <AccentButton action={turnOnFilter}>
-        <FontAwesomeIcon icon={faFilter} />
-      </AccentButton>
-    </div>
+    )}
+
     <AccentButton type="orange">
       <FontAwesomeIcon icon={faShoppingCart} />
     </AccentButton>

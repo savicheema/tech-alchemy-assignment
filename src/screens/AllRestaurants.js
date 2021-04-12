@@ -7,14 +7,22 @@ class AllRestaurants extends React.Component {
   render() {
     let { isLoading, restaurants, isFiltering } = this.state;
     console.log(" AllRestaurants STATE", isLoading);
+    let { goToRestaurant } = this.props;
+
+    console.log("go to Restaurant", goToRestaurant);
 
     return (
       <div className="all-restaurants">
-        <TopBar turnOnFilter={this.turnOnFilter} />
+        <TopBar turnOnFilter={this.turnOnFilter} isRestaurant={false} />
 
         <Category />
 
-        {!isLoading && <RestaurantGrid restaurants={restaurants} />}
+        {!isLoading && (
+          <RestaurantGrid
+            restaurants={restaurants}
+            goToRestaurant={goToRestaurant}
+          />
+        )}
         {isLoading && "Loading..."}
 
         {isFiltering && <Filter turnOfFilter={this.turnOfFilter} />}

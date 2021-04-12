@@ -3,8 +3,13 @@ import "./restaurant.css";
 
 import LinesEllipsis from "react-lines-ellipsis";
 
-const Restaurant = ({ restaurant }) => (
-  <div className="restaurant">
+const Restaurant = ({ restaurant, goToRestaurant }) => (
+  <div
+    className="restaurant"
+    onClick={() => {
+      goToRestaurant(restaurant.id);
+    }}
+  >
     <img src={restaurant.restaurantImage} alt="restaurant" />
     <div className="info">
       <div className="name">{restaurant.restaurantName}</div>

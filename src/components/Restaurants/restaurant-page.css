@@ -1,0 +1,8 @@
+.restaurant-page {
+  display: flex;
+}
+
+.restaurant-page img {
+  width: 552px;
+  height: 296px;
+}

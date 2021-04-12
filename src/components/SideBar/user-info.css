@@ -1,0 +1,16 @@
+.user-info {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info .details,
+.user-info .switch {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info .switch img {
+  margin-bottom: 4px;
+}

@@ -1,0 +1,12 @@
+.update {
+  height: 324px;
+  width: 256px;
+  margin-left: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 20px;
+}

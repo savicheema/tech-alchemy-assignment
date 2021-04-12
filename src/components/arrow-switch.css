@@ -1,0 +1,14 @@
+.arrow-switch {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow-switch.normal img {
+  margin-bottom: 4px;
+}
+
+.arrow-switch.small img {
+  height: 6px;
+  width: 10px;
+  margin-bottom: 2px;
+}

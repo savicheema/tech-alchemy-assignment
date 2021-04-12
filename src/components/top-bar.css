@@ -1,0 +1,40 @@
+.top-bar {
+  display: flex;
+  width: calc(1440px - 304px - 64px);
+}
+
+.top-bar div {
+  margin: 0 16px;
+}
+
+.top-bar .back {
+  flex: 1;
+}
+
+.top-bar .back .back-button {
+  background-color: var(--accent);
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+}
+
+.top-bar .all-functions {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .all-functions .shop {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .all-functions .shop span {
+  width: 54px;
+  margin: 0 4px;
+  font-size: 14px;
+}
+
+.top-bar .all-functions .shop svg {
+  height: 18px;
+  width: 24px;
+}

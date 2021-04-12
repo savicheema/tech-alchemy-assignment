@@ -1,0 +1,37 @@
+.user-menu {
+  margin-top: 52px;
+}
+
+.user-menu .user-menu-items {
+  height: 56px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 20% 64% 16%;
+  align-items: center;
+}
+.user-menu .user-menu-items:hover {
+  background-color: #ddd;
+}
+
+.user-menu .user-menu-items svg {
+  height: 28px;
+  width: 28px;
+  padding: 0 16px;
+}
+
+.user-menu .user-menu-items span.notification-bubble {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  background-color: var(--accent);
+  color: white;
+}
+
+.user-menu .user-menu-items.selected {
+  background-color: var(--accent) !important;
+  color: white;
+}

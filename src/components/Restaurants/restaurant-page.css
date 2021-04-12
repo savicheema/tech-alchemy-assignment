@@ -1,8 +1,19 @@
 .restaurant-page {
   display: flex;
+  margin-top: 48px;
 }
 
 .restaurant-page img {
   width: 552px;
   height: 296px;
+  border-radius: 16px;
+}
+
+.restaurant-page .info {
+  margin-right: 16px;
+}
+
+.restaurant-page .info .name {
+  font-size: 32px;
+  margin-bottom: 12px;
 }

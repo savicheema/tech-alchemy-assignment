@@ -3,9 +3,9 @@ import "./restaurant-details.css";
 
 import { TopBar, RestaurantPage } from "../components";
 
-const RestaurantDetails = ({ restaurantID }) => (
+const RestaurantDetails = ({ restaurantID, goToAllRestaurant }) => (
   <div className="restaurant-details">
-    <TopBar isRestaurant={true} />
+    <TopBar isRestaurant={true} goToAllRestaurant={goToAllRestaurant} />
     <RestaurantPage restaurantID={restaurantID} />
   </div>
 );

@@ -14,10 +14,10 @@ import ArrowSwitch from "./ArrowSwitch";
 import Search from "./Search";
 import AccentButton from "./utils/AccentButton";
 
-const TopBar = ({ turnOnFilter, isRestaurant }) => (
+const TopBar = ({ turnOnFilter, isRestaurant, goToAllRestaurant }) => (
   <div className="top-bar">
     <div className="back">
-      <AccentButton>
+      <AccentButton action={goToAllRestaurant}>
         <img src={back} alt="back" />
       </AccentButton>
     </div>

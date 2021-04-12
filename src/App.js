@@ -9,6 +9,12 @@ class App extends React.Component {
     this.setState({ screen: RestaurantDetails, restaurantID: id });
   };
 
+  goToAllRestaurant = (id) => {
+    let { screen } = this.state;
+    if (screen === AllRestaurants) return;
+    this.setState({ screen: AllRestaurants, restaurantID: undefined });
+  };
+
   render() {
     let { screen, restaurantID } = this.state;
     console.log(" App STATE", screen);
@@ -18,6 +24,7 @@ class App extends React.Component {
         <SideBar />
         <this.state.screen
           goToRestaurant={this.goToRestaurant}
+          goToAllRestaurant={this.goToAllRestaurant}
           restaurantID={restaurantID}
         />
       </div>

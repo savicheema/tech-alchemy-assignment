@@ -24,11 +24,13 @@ class RestaurantPage extends React.Component {
         <div className="restaurant-page">
           <div className="info">
             <div className="name">{restaurant.restaurantName}</div>
-            <div className="description">Lorem Ipsum</div>
+            <div className="description">
+              {restaurant.restaurantDescription}
+            </div>
             <div className="opening-hours">5PM</div>
-            <div className="website">oow.com</div>
+            <div className="website">{restaurant.websiteUrl}</div>
           </div>
-          <img src={"https://example.com/pic.jpg"} alt="example" />
+          <img src={restaurant.restaurantImage} alt="example" />
         </div>
       );
   }

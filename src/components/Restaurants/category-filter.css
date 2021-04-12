@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   margin-right: 48px;
+  border-radius: 12px;
+}
+
+.option:hover {
+  background-color: #ddd;
 }
 
 .option img {

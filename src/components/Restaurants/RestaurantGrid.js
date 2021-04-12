@@ -9,7 +9,7 @@ const RestaurantGrid = ({ restaurants }) => (
     <div className="grid">
       {restaurants.map((restaurant) => {
         console.log("Restaurant", restaurant);
-        return <Restaurant restaurant={restaurant} />;
+        return <Restaurant restaurant={restaurant} key={restaurant.id} />;
       })}
     </div>
   </div>

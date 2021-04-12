@@ -5,10 +5,11 @@ import LinesEllipsis from "react-lines-ellipsis";
 
 const Restaurant = ({ restaurant }) => (
   <div className="restaurant">
-    <img src={restaurant.restaurantImage} alt="restaurant image" />
+    <img src={restaurant.restaurantImage} alt="restaurant" />
     <div className="info">
-      <div className="name">Burger Mania</div>
-      <div className="status">Open Now</div>
+      <div className="name">{restaurant.restaurantName}</div>
+      {restaurant.isOpen && <div className="status open">Open Now</div>}
+      {!restaurant.isOpen && <div className="status closed">Closed</div>}
     </div>
     <p>
       <LinesEllipsis

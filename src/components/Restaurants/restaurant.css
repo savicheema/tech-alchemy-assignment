@@ -1,6 +1,11 @@
 .restaurant {
 }
 
+.restaurant:hover {
+  background-color: #ddd;
+  border-radius: 16px;
+}
+
 .restaurant img {
   height: 176px;
   width: 100%;
@@ -22,6 +27,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.restaurant .info .status.closed {
+  color: var(--orange);
 }
 
 .restaurant p {

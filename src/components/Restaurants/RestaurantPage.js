@@ -1,6 +1,11 @@
 import React from "react";
 import "./restaurant-page.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faGlobe } from "@fortawesome/free-solid-svg-icons";
+
+import Time from "../utils/Time";
+
 class RestaurantPage extends React.Component {
   render() {
     let { isLoading, allRestaurantsDetails } = this.state;
@@ -27,8 +32,17 @@ class RestaurantPage extends React.Component {
             <div className="description">
               {restaurant.restaurantDescription}
             </div>
-            <div className="opening-hours">5PM</div>
-            <div className="website">{restaurant.websiteUrl}</div>
+            <Time time={restaurant.openingHours} />
+            <div className="phone">
+              <FontAwesomeIcon icon={faPhone} />{" "}
+              <span>{restaurant.contactNumber}</span>
+            </div>
+
+            <div className="website">
+              {" "}
+              <FontAwesomeIcon icon={faGlobe} />{" "}
+              <span>{restaurant.websiteUrl}</span>
+            </div>
           </div>
           <img src={restaurant.restaurantImage} alt="example" />
         </div>

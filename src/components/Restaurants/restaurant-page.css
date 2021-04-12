@@ -17,3 +17,10 @@
   font-size: 32px;
   margin-bottom: 12px;
 }
+.restaurant-page .info .phone {
+  margin-bottom: 16px;
+}
+.restaurant-page .info .phone span,
+.restaurant-page .info .website span {
+  margin-left: 8px;
+}

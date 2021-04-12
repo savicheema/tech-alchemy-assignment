@@ -9,6 +9,7 @@
 
 .top-bar .back {
   flex: 1;
+  margin: 0;
 }
 
 .top-bar .back .back-button {

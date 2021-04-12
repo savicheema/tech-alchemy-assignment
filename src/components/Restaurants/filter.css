@@ -1,0 +1,96 @@
+.filter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(12px);
+}
+
+.filter .filter-panel {
+  background-color: white;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 400px;
+
+  border-radius: 24px 0px 0px 24px;
+
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.filter .filter-panel .title {
+  font-size: 24px;
+
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter .filter-panel .title span {
+  position: relative;
+  top: -8px;
+  height: 32px;
+  width: 32px;
+  font-size: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter .filter-panel .title span:hover {
+  background-color: #ddd;
+}
+
+.filter .filter-panel .sort {
+}
+
+.filter .filter-panel .sort .sort-title {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.filter .filter-panel .sort .option {
+  color: var(--orange);
+}
+.filter .filter-panel .sort .option:hover {
+  background: none;
+}
+.filter .filter-panel .sort .option span {
+  margin-left: 8px;
+}
+
+.filter .filter-panel .cuisine {
+  margin-top: 32px;
+  flex: 1;
+}
+.filter .filter-panel .cuisine .cuisine-title {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.filter .filter-panel .cuisine .cuisine-options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.filter .filter-panel .cuisine .cuisine-options .option {
+  background-color: #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 4px;
+}
+.filter .filter-panel .cuisine .cuisine-options .option:first-child {
+  color: var(--orange);
+}
+.filter .filter-panel .cuisine .see-more {
+  color: var(--orange);
+}

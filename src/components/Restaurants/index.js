@@ -1,4 +1,4 @@
 import Category from "./Category";
 import RestaurantGrid from "./RestaurantGrid";
-
-export { Category, RestaurantGrid };
+import Filter from "./Filter";
+export { Category, RestaurantGrid, Filter };

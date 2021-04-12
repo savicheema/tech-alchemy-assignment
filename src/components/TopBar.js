@@ -14,7 +14,7 @@ import ArrowSwitch from "./ArrowSwitch";
 import Search from "./Search";
 import AccentButton from "./utils/AccentButton";
 
-const TopBar = () => (
+const TopBar = ({ turnOnFilter }) => (
   <div className="top-bar">
     <div className="back">
       <AccentButton>
@@ -28,7 +28,7 @@ const TopBar = () => (
         <ArrowSwitch type="small" />
       </div>
       <Search />
-      <AccentButton>
+      <AccentButton action={turnOnFilter}>
         <FontAwesomeIcon icon={faFilter} />
       </AccentButton>
     </div>

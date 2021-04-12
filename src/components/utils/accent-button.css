@@ -11,3 +11,9 @@
 .accent-button.orange {
   background-color: var(--orange) !important;
 }
+
+.accent-button:hover {
+  background-color: white !important;
+  color: black;
+  cursor: pointer;
+}

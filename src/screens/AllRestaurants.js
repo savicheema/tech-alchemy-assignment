@@ -1,21 +1,23 @@
 import React from "react";
 import "./all-restaurants.css";
 
-import { TopBar, Category, RestaurantGrid } from "../components";
+import { TopBar, Category, RestaurantGrid, Filter } from "../components";
 
 class AllRestaurants extends React.Component {
   render() {
-    let { isLoading, restaurants } = this.state;
+    let { isLoading, restaurants, isFiltering } = this.state;
     console.log(" AllRestaurants STATE", isLoading);
 
     return (
       <div className="all-restaurants">
-        <TopBar />
+        <TopBar turnOnFilter={this.turnOnFilter} />
 
         <Category />
 
         {!isLoading && <RestaurantGrid restaurants={restaurants} />}
         {isLoading && "Loading..."}
+
+        {isFiltering && <Filter turnOfFilter={this.turnOfFilter} />}
       </div>
     );
   }
@@ -24,9 +26,10 @@ class AllRestaurants extends React.Component {
     super(props);
 
     let isLoading = false;
+    let isFiltering = false;
     let restaurants = [];
 
-    this.state = { isLoading, restaurants };
+    this.state = { isLoading, restaurants, isFiltering };
   }
 
   componentDidMount() {
@@ -49,6 +52,14 @@ class AllRestaurants extends React.Component {
         });
     });
   }
+
+  turnOnFilter = () => {
+    this.setState({ isFiltering: true });
+  };
+
+  turnOfFilter = () => {
+    this.setState({ isFiltering: false });
+  };
   componentWillUnmount() {}
 }
 

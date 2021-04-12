@@ -3,6 +3,7 @@
   align-items: center;
   margin-right: 48px;
   border-radius: 12px;
+  padding: 0 8px;
 }
 
 .option:hover {

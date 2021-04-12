@@ -1,6 +1,7 @@
 .App {
   position: relative;
-  width: 1440px;
+  width: 100vw;
+  max-width: 1440px;
   height: 100vh;
 
   background-color: var(--bg);

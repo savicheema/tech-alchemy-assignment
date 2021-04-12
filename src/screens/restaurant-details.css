@@ -1,3 +1,5 @@
 .restaurant-details {
   padding: 32px;
+
+  overflow-y: auto;
 }

@@ -11,14 +11,14 @@
   border-radius: 20px;
 }
 
-.update svg {
+.update svg:first-child {
   height: 44px;
   width: 44px !important;
   color: var(--orange);
 }
 
 .update svg:last-child {
-  color: white;
+  margin-left: 8px;
 }
 
 .update .update-info {

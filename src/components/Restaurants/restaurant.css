@@ -1,0 +1,29 @@
+.restaurant {
+}
+
+.restaurant img {
+  height: 176px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.restaurant .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.restaurant .info .status {
+  font-size: 11px;
+  width: 72px;
+  height: 24px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant p {
+  font-size: 12px;
+}

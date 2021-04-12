@@ -1,0 +1,14 @@
+.option {
+  display: flex;
+  align-items: center;
+  margin-right: 48px;
+}
+
+.option img {
+  background-color: #ddd;
+  border-radius: 12px;
+  height: 44px;
+  width: 44px;
+  margin-right: 12px;
+  padding: 0 4px;
+}

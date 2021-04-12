@@ -1,0 +1,14 @@
+.restaurant-grid {
+  margin: 32px 0;
+}
+
+.restaurant-grid .title {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.restaurant-grid .grid {
+  display: grid;
+  grid-template-columns: 31.3% 31.3% 31.3%;
+  grid-gap: 2%;
+}

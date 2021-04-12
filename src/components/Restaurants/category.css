@@ -1,0 +1,14 @@
+.category {
+  margin: 32px 0;
+}
+
+.category .title {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.category .category-filter {
+  display: flex;
+  justify-content: flex-start;
+  margin: 16px 0;
+}

@@ -23,7 +23,8 @@ class RestaurantPage extends React.Component {
       }
     }
 
-    if (isLoading || !restaurant) return "Loading...";
+    if (isLoading || !restaurant)
+      return <div className="restaurant-page">Loading...</div>;
     else
       return (
         <div className="restaurant-page">

@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+import AccentButton from "../utils/AccentButton";
+
 const Update = () => (
   <div className="update">
     <FontAwesomeIcon icon={faClock} />
@@ -16,10 +18,10 @@ const Update = () => (
       <div className="lower">Order id: #ED564F</div>
     </div>
 
-    <div className="details">
+    <AccentButton>
       <span>Details</span>
       <FontAwesomeIcon icon={faArrowRight} />
-    </div>
+    </AccentButton>
   </div>
 );
 

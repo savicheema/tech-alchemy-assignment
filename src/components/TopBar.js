@@ -6,6 +6,7 @@ import {
   faStore,
   faFilter,
   faShoppingCart,
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 import back from "../assets/back-arrow.svg";
@@ -18,7 +19,7 @@ const TopBar = ({ turnOnFilter, isRestaurant, goToAllRestaurant }) => (
   <div className="top-bar">
     <div className="back">
       <AccentButton action={goToAllRestaurant}>
-        <img src={back} alt="back" />
+        <FontAwesomeIcon icon={faChevronLeft} />
       </AccentButton>
     </div>
     {!isRestaurant && (

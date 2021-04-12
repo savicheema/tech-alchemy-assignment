@@ -10,3 +10,18 @@
   background-color: white;
   border-radius: 20px;
 }
+
+.update svg {
+  height: 44px;
+  width: 44px !important;
+  color: var(--orange);
+}
+
+.update svg:last-child {
+  color: white;
+}
+
+.update .update-info {
+  font-size: 12px;
+  text-align: center;
+}
